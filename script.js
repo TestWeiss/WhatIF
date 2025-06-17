@@ -9,6 +9,8 @@ function showVideo(videoId) {
   });
 
   const selectedVideo = document.getElementById(videoId);
-  selectedVideo.style.display = 'block';
-  selectedVideo.play();
+  if (selectedVideo) {
+    selectedVideo.style.display = 'block';
+    selectedVideo.play();
+  }
 }
